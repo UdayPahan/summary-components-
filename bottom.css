@@ -1,0 +1,65 @@
+.bottomhalf{
+    padding:0 2rem;
+}
+
+.bottomhalf div:nth-of-type(1){
+    align-self: flex-start;
+}
+
+.bottomhalf div{
+    display: flex;
+    margin:1rem 0;
+}
+
+.bottomhalf div span:nth-child(odd){
+    display: flex;
+    align-items: center;
+    
+}
+
+.bottomhalf div span svg{
+    margin-right:0.7rem;
+}
+
+.bottomhalf div span{
+    flex:1;
+}
+
+.bottomhalf div span:nth-child(even){
+    text-align:right;
+    /* border: 1px solid red; */
+}
+
+.bottomhalf div[class]{
+    padding:0.5rem 0.3rem;
+    border-radius: 10px;
+}
+
+.react{
+    background-color: hsla(0, 100%, 67%, 0.1);
+    color:var(--Light-red);
+}
+
+.memory{
+    color: var(--Orangey-yellow);
+    background-color: hsla(39,200%,59%,0.1);
+}
+
+.verbal{
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color:var(--Green-teal);
+}
+
+.visual{
+    background-color: hsla(234, 85%, 45%, 0.1);
+    color:var(--Cobalt-blue);
+}
+
+.bottomhalf > :last-child{
+    display: block;
+    padding:1rem 0.3rem;
+    border-radius: 40px;
+    text-align: center;
+    color:var(--White);
+    background-color: var(--Dark-gray-blue);
+}
