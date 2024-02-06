@@ -6,4 +6,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(
+    var(--Light-slate-blue-background) 0%,
+    var(--Light-royal-blue-background) 25%,
+    var(--Violet-blue-circle) 55%,
+    var(--Persian-blue-circle) 100%
+    );
  }
