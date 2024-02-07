@@ -21,7 +21,9 @@
   
   @media(min-width:600px){
      .top-half{
+        width:100%;
         height:100%;
+        border-radius: 40px;
      }
   }
    .middle{
@@ -47,6 +49,12 @@
       color:var(--Light-lavender);
    }
 
+@media (min-width:600px){
+   .middle{
+      width:20vw;
+      height:20vw;
+   }
+}
  .bottom{
      text-align:center;
      max-width:27ch;
