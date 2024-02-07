@@ -1,0 +1,16 @@
+@media (min-width:600px){
+   .container{
+      border: 1px solid red;
+      width:70vw;
+      height:70vw;
+      display:flex;
+   }
+   
+   body{
+      height:100vh;
+      display:flex;
+      justify-content: center;
+      align-items:center;
+   }
+   
+}
