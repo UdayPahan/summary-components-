@@ -6,6 +6,13 @@
     align-self: flex-start;
 }
 
+@media (min-width:600px){
+   .bottomhalf{
+      height:100%;
+      width:100%;
+      border: 1px solid blue;
+   }
+}
 .bottomhalf div{
     display: flex;
     margin:1rem 0;
