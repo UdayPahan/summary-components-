@@ -19,6 +19,11 @@
     color:var(--Light-lavender);
    }
   
+  @media(min-width:600px){
+     .top-half{
+        height:100%;
+     }
+  }
    .middle{
       height:33vw;
       width: 33vw;
