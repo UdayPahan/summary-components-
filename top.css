@@ -1,31 +1,37 @@
 
 .top-half{
    color:var(--Pale-blue);
-    height:50vh;
-    border-radius:0 0 50px 50px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(
-       var(--Light-slate-blue-background),
-       var(--Light-royal-blue-background) 65%
-   
-    );
- }
-
- 
- .top-half span:nth-of-type(1){
-    color:var(--Light-lavender);
+   /* height:50vh; */
+   border-radius:0 0 50px 50px;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: linear-gradient(
+      var(--Light-slate-blue-background),
+      var(--Light-royal-blue-background) 
+      );
    }
-  
-  @media(min-width:600px){
-     .top-half{
-        width:100%;
-        height:100%;
-        border-radius: 40px;
-     }
-  }
+   
+   .top-half > *{
+      margin:1rem 0;
+   }
+   
+   .top-half span:nth-of-type(1){
+      color:var(--Light-lavender);
+   }
+   
+   @media(min-width:600px){
+      .top-half{
+         width:100%;
+         height:100%;
+         border-radius: 40px;
+         background: linear-gradient(
+            var(--Light-slate-blue-background),
+            var(--Light-royal-blue-background) 50% 
+            );
+      }
+   }
    .middle{
       height:33vw;
       width: 33vw;
@@ -35,8 +41,8 @@
       align-items: center;
       border-radius: 50%;
       background:linear-gradient(
-         var(--Violet-blue-circle),
-         var(--Light-royal-blue-background) 80%
+            var(--Violet-blue-circle),
+            var(--Light-royal-blue-background) 
       );
    }
 
@@ -54,6 +60,14 @@
       width:20vw;
       height:20vw;
    }
+
+@media (min-width:1440px){
+   .top-half{
+      width:50%;
+      font-size:3rem;
+   }
+
+}
 }
  .bottom{
      text-align:center;
@@ -69,3 +83,20 @@
       color:var(--Light-lavender);
       font-size:1rem;
    }
+
+@media (min-width:1440px){
+   .bottom{
+      font-size: 3rem;
+   }
+
+   .bottom p:nth-of-type(1){
+      font-size:3rem;
+      font-weight: 700;
+   }
+
+   .bottom p:nth-of-type(2){
+      color:var(--Light-lavender);
+      font-size:1.7rem;
+      padding:4rem;
+   }
+}

@@ -16,10 +16,20 @@
       justify-content: center;
    }
 }
+
+@media (min-width:1440px){
+    .bottomhalf{
+        width:50%;
+        font-size: 2.5rem;
+        padding:0 2.5rem;
+        gap:2rem;
+    }
+}
 .bottomhalf div{
     display: flex;
     margin:1rem 0;
 }
+
 
 .bottomhalf div span:nth-child(odd){
     display: flex;
@@ -45,23 +55,35 @@
     border-radius: 10px;
 }
 
+.bottomhalf div[class] span:last-child{
+    /* border: 1px solid black; */
+    color:var(--Dark-gray-blue);
+}
+
+@media (min-width:1440px){
+    .bottomhalf div[class]{
+        padding:1rem 2rem;
+        border-radius: 10px;
+        font-size:2rem;
+    }
+}
 .react{
-    background-color: hsla(0, 100%, 67%, 0.1);
+    background-color: hsla(0, 100%, 67%, 0.15);
     color:var(--Light-red);
 }
 
 .memory{
     color: var(--Orangey-yellow);
-    background-color: hsla(39,200%,59%,0.1);
+    background-color: hsla(39,200%,59%,0.15);
 }
 
 .verbal{
-    background-color: hsla(166, 100%, 37%, 0.1);
+    background-color: hsla(166, 100%, 37%, 0.15);
     color:var(--Green-teal);
 }
 
 .visual{
-    background-color: hsla(234, 85%, 45%, 0.1);
+    background-color: hsla(234, 85%, 45%, 0.15);
     color:var(--Cobalt-blue);
 }
 
@@ -72,4 +94,19 @@
     text-align: center;
     color:var(--White);
     background-color: var(--Dark-gray-blue);
+}
+
+.bottomhalf > :last-child:hover{
+    background: linear-gradient(
+        var(--Violet-blue-circle),
+        var(--Persian-blue-circle)
+    );
+}
+
+@media (min-width:1440px){
+    .bottomhalf > :last-child{
+        font-size: 1.5rem;
+        margin:0.5rem 0;
+        padding:1.5rem 1rem;
+    }
 }
